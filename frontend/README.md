@@ -2,6 +2,9 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## project start both backend and forent end are run into split terminal 
+project is started with the npm start and backend is also started with the same npm start
+
 ## Available Scripts
 
 In the project directory, you can run:
