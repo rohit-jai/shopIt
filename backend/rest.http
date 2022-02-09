@@ -1,0 +1,177 @@
+@DOMAIN =http://localhost:4000/
+
+
+
+
+// for only check the test api 
+GET {{DOMAIN}}product/
+
+// For insert the new product the api is given below
+###
+POST {{DOMAIN}}product/new
+Content-Type: application/json
+
+{
+        "name": "SandDisk Ultra",
+        "price": "45.89",
+        "description": " this is a very good product . it is very useful product . By this we are do many important document ",
+        "ratings": 4.5,
+        "images":[
+            {
+                "public_id": "products/sdfgas",
+                "url": "https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_960_720.jpg"
+            }
+        ],
+        "category": "Electronics",
+        "seller": "Ebay",
+        "stock": 50,
+        "numOfReviews": 32,
+        "reviews":[]
+}
+
+// for get the all product
+###
+
+GET {{DOMAIN}}product/show
+
+// for get the sigle product
+###
+GET {{DOMAIN}}product/showSingleProduct/61d59223eb802b86587ee515
+
+// update Product By id 
+###
+PATCH {{DOMAIN}}product/updateSingleProduct/61d59223eb802b86587ee513
+Content-Type: application/json
+
+{
+        "name": "HP Lenovo",
+        "price": "563456",
+        "description": " this is a very good product . it is very useful product . By this we are do many important document ",
+        "ratings": 2.5,
+        "images":[
+            {
+                "public_id": "products/sdfgas",
+                "url": "https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_960_720.jpg"
+            }
+        ],
+        "category": "Laptops",
+        "seller": "Facebook",
+        "stock": 10,
+        "numOfReviews": 50,
+        "reviews":[]
+    }
+
+
+//Delete all Product
+###
+DELETE {{DOMAIN}}product/deleteAllProduct
+
+//Delete Product on behalf of id
+###
+DELETE {{DOMAIN}}product/deleteProductById/61d59223eb802b86587ee50d
+
+// New User sign up
+###
+POST {{DOMAIN}}user.register
+Content-Type: application/json
+
+{
+    "name":"Rohit",
+    "email":"rohit1@gmail.com",
+    "password":"12345"
+}
+
+// check user login 
+###
+POST {{DOMAIN}}user/loginUser HTTP/1.1
+Content-Type: application/json
+
+{
+    "email":"rohit1@gmail.com",
+    "password":"12345"
+}
+
+//user logout and clear cookies
+###
+GET {{DOMAIN}}user/logoutUser
+
+// user profile
+###
+GET {{DOMAIN}}user/me
+
+//update password by user
+###
+PUT {{DOMAIN}}user/password/update
+Content-Type: application/json
+
+{
+    "oldPassword":"123456",
+    "password": "12345"
+}
+
+// user profile update by user  we can update name and email only bu user side
+
+PUT {{DOMAIN}}user/me/update
+Content-Type: application/json
+
+{
+    "name":"Rohit",
+    "email":"rohit@gmail.com"
+}
+
+// Get all user by admin 
+###
+GET {{DOMAIN}}user/admin/users
+
+//Get user details by id - this feature is only for admin
+###
+GET {{DOMAIN}}user/admin/user/61d70fbe86f09f3cccb08a6f
+
+//Update user profile by admin 
+###
+PUT {{DOMAIN}}user/admin/user/61d70fbe86f09f3cccb08a6f
+Content-Type: application/json
+
+{
+    "name":"Gulam",
+    "email":"gulaM1@gmail.com",
+    "role":"user"
+}
+
+
+// Delete user by admin 
+###
+DELETE {{DOMAIN}}user/admin/user/61d70fbe86f09f3cccb08a6f
+
+
+//adding a new order 
+###
+POST {{DOMAIN}}order/new
+Content-Type: application/json
+
+{
+    "itemsPrice": 2.77,
+    "taxPrice": 0.14,
+    "shippingPrice": 25,
+    "totalPrice" : 27.89,
+    "orderItems" :[
+        {
+            "product":"61d6dc9f51fef42b964f0bbe",
+            "name":"Home Grown Mintosh Apple",
+            "price":2.75,
+            "image":"https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_960_720.jpg",
+            "quantity":1
+        }
+    ],
+    "shippingInfo":{
+        "address": "haryana",
+        "city":"noida",
+        "phoneNo":"11111111",
+        "postalCode": "10001",
+        "country":"India"
+    },
+    "paymentInfo":{
+        "id":"ertgwergfdgdfg",
+        "status": "succeeded"
+    }
+}

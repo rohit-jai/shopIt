@@ -1,0 +1,114 @@
+[
+    {
+        "name": "SandDisk Ultra",
+        "price": "45.89",
+        "description": " this is a very good product . it is very useful product . By this we are do many important document ",
+        "ratings": 4.5,
+        "images":[
+            {
+                "public_id": "products/sdfgas",
+                "url": "https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_960_720.jpg"
+            }
+        ],
+        "category": "Electronics",
+        "seller": "Ebay",
+        "stock": 50,
+        "numOfReviews": 32,
+        "reviews":[]
+    },
+    {
+        "name": "Sumsung Mobile",
+        "price": "35.89",
+        "description": " this is a very good product . it is very useful product . By this we are do many important document ",
+        "ratings": 4.5,
+        "images":[
+            {
+                "public_id": "products/sdfgas",
+                "url": "https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_960_720.jpg"
+            }
+        ],
+        "category": "Electronics",
+        "seller": "Google",
+        "stock": 50,
+        "numOfReviews": 32,
+        "reviews":[]
+    },
+    {
+        "name": "Frari",
+        "price": "563456",
+        "description": " this is a very good product . it is very useful product . By this we are do many important document ",
+        "ratings": 2.5,
+        "images":[
+            {
+                "public_id": "products/sdfgas",
+                "url": "https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_960_720.jpg"
+            }
+        ],
+        "category": "Electronics",
+        "seller": "Facebook",
+        "stock": 10,
+        "numOfReviews": 32,
+        "reviews":[]
+    },
+    {
+        "name": "NIKE",
+        "price": "5.89",
+        "description": " this is a very good product . it is very useful product . By this we are do many important document ",
+        "ratings": 7.5,
+        "images":[
+            {
+                "public_id": "products/sdfgas",
+                "url": "https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_960_720.jpg"
+            }
+        ],
+        "category": "Clothes/shoes",
+        "seller": "Nike Store",
+        "stock": 100,
+        "numOfReviews": 42,
+        "reviews":[]
+    },
+    {
+        "name": "Dell",
+        "price": "563456",
+        "description": " this is a very good product . it is very useful product . By this we are do many important document ",
+        "ratings": 2.5,
+        "images":[
+            {
+                "public_id": "products/sdfgas",
+                "url": "https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_960_720.jpg"
+            }
+        ],
+        "category": "Laptops",
+        "seller": "Facebook",
+        "stock": 10,
+        "numOfReviews": 50,
+        "reviews":[]
+    },
+    {
+        "name": "Lenovo",
+        "price": "85.89",
+        "description": " this is a very good product . it is very useful product . By this we are do many important document ",
+        "ratings": 7.5,
+        "images":[
+            {
+                "public_id": "products/sdfgas",
+                "url": "https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_960_720.jpg"
+            },
+            {
+                "public_id": "products/sdfgas",
+                "url": "https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_960_720.jpg"
+            },
+            {
+                "public_id": "products/sdfgas",
+                "url": "https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_960_720.jpg"
+            }
+        ],
+        "category": "Laptops",
+        "seller": "Lenovo Store",
+        "stock": 100,
+        "numOfReviews": 100,
+        "reviews":[]
+    }
+    
+
+]
